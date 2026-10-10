@@ -9,11 +9,11 @@ const Navbar = () => {
 
                 <div className="flex items-center justify-start md:hidden p-5 shrink-0">
                     <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
-                        <img src="/image/hamburger.png" alt="" className="h-8 w-8 object-contain" />
+                        <img src="/public/image/hamburger.png" alt="" className="h-8 w-8 object-contain" />
                     </button>
                 </div>
                 <div className="flex items-center justify-center md:justify-start justify-self-center md:justify-self-auto shrink-0 ">
-                    <img src="/image/logo-text.png" alt="" className="h-8 w-auto" />
+                    <img src="/public/image/logo-text.png" alt="" className="h-8 w-auto" />
                 </div>
 
                     <ul className="hidden md:flex flex-row flex-1 justify-center gap-5 text-md list-none items-center">
