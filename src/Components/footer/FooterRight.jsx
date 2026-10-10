@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const FooterRight = () => {
+const FooterRight = () => {
   return (
     <div className='flex justify-between gap-30'>
         <div>
@@ -33,3 +33,5 @@ export const FooterRight = () => {
     </div>
   )
 }
+
+export default FooterRight

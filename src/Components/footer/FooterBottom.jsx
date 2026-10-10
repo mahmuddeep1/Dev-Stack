@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const FooterBottom = () => {
+const FooterBottom = () => {
   return (
     <div className='flex justify-between text-slate-400 border-t-[1px] border-gray-100  '>
         <p className='mt-10'>© 2026 Dev Stack.</p>
@@ -11,3 +11,4 @@ export const FooterBottom = () => {
     </div>
   )
 }
+export default FooterBottom

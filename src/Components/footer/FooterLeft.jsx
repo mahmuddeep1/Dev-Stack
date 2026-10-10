@@ -1,6 +1,6 @@
 
 
-export const FooterLeft = () => {
+const FooterLeft = () => {
   return (
     <div className="flex flex-col items-center text-center md:items-start md:text-left">
         <div className="flex flex-col items-center md:items-start gap-3">
@@ -26,3 +26,5 @@ export const FooterLeft = () => {
     
   )
 }
+
+export default FooterLeft
