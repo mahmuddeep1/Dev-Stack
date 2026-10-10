@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 const Navbar = () => {
     
     const [isOpen, setIsOpen] = useState(false)
@@ -14,7 +13,7 @@ const Navbar = () => {
                     </button>
                 </div>
                 <div className="flex items-center justify-center md:justify-start justify-self-center md:justify-self-auto shrink-0 ">
-                    <img src="image/logo-text.png" alt="" className="h-8 w-auto" />
+                    <img src="/image/logo-text.png" alt="" className="h-8 w-auto" />
                 </div>
 
                     <ul className="hidden md:flex flex-row flex-1 justify-center gap-5 text-md list-none items-center">
