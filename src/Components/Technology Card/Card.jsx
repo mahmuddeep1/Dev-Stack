@@ -1,16 +1,16 @@
 
 const badgeColors = {
-    Popular: "bg-blue-50 text-blue-500",
-    Versatile: "bg-green-50 text-green-600",
-    Fast: "bg-orange-50 text-orange-500",
-    Standard: "bg-green-50 text-green-600",
-    "Top SQL": "bg-blue-50 text-blue-500",
-    Cache: "bg-red-50 text-red-500",
-    Ubiquitous: "bg-yellow-50 text-yellow-600",
-    Essential: "bg-purple-50 text-purple-500",
-    Robust: "bg-blue-50 text-blue-500",
-    Modern: "bg-cyan-50 text-cyan-500",
-    Containers: "bg-sky-50 text-sky-500"
+  Popular: "bg-blue-50 text-blue-500",
+  Versatile: "bg-green-50 text-green-600",
+  Fast: "bg-orange-50 text-orange-500",
+  Standard: "bg-green-50 text-green-600",
+  "Top SQL": "bg-blue-50 text-blue-500",
+  Cache: "bg-red-50 text-red-500",
+  Ubiquitous: "bg-yellow-50 text-yellow-600",
+  Essential: "bg-purple-50 text-purple-500",
+  Robust: "bg-blue-50 text-blue-500",
+  Modern: "bg-cyan-50 text-cyan-500",
+  Containers: "bg-sky-50 text-sky-500"
 };
 //transition-all duration-300 ease-out hover:shadow-lg hover:-translate-y-2
 const Card = (props) => {

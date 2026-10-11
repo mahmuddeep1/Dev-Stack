@@ -1,3 +1,5 @@
+
+import { toast } from "react-toastify";
 import { useEffect, useState } from "react";
 import Card from "./Card";
 import SideBar from "./SideBar";
@@ -16,19 +18,29 @@ const MainCard = () => {
             setTechnologies(data);
         };
         fetchData()
+
+        .catch((error) => {
+                console.error("Error loading technologies:", error);
+                setLoading(false);
+                toast.error("Failed to load technologies");
+            });
+
     }, []);
     console.log(technologies);
 
     const Add = (technology) => {
         if (stack.some((item) => item.id === technology.id)) {
+            toast.warning(`${technology.name} is already in your stack`)
             return;
         }
         setStack((prev) => [...prev, technology])
+        toast.success(`${technology.name} added to stack`)
     }
-
+    
     const handleRemove = (id) => {
         setStack((prev) =>
             prev.filter((item) => item.id !== id))
+        toast.info(` removed from stack`)
 
     }
     const handleRemoveAll = () => {
@@ -36,6 +48,7 @@ const MainCard = () => {
             return;
         }
         setStack([]);
+        toast.info("All technologies removed from stack");
     }
     return (
         <div className="mt-10 w-[95%] mx-auto px-8 py-8">
